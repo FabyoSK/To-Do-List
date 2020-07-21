@@ -1,6 +1,6 @@
 var listElement = document.querySelector('#app ul')
-var inputElement = document.querySelector('#app input')
-var buttonElement = document.querySelector('#app button')
+var inputElement = document.querySelector('#app #add input')
+var buttonElement = document.querySelector('#app #add button')
 
 
 var todos = JSON.parse(localStorage.getItem('listTodo')) || []
@@ -12,8 +12,8 @@ function renderTodos() {
 
         var linkElement = document.createElement('a')
         linkElement.setAttribute('href', '#')
-        var linkText = document.createTextNode('Excluir')
-
+        
+        var linkText = document.createTextNode('X')
         var pos = todos.indexOf(todo)
         linkElement.setAttribute('onclick', 'deleteTodo(' + pos + ')')
         linkElement.appendChild(linkText)

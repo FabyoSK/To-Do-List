@@ -1,0 +1,81 @@
+:root {
+  --bg: rgb(70, 142, 236);
+}
+
+
+body{
+   background:var(--bg);
+   font: normal 15pt Arial
+ }
+ 
+ header{
+   color: white;
+   text-align: center;
+ }
+ 
+ #app {
+   background: white;
+   border-radius: 10px;
+   max-width: 600px;
+   margin: auto;
+   box-shadow: 3px 3px 10px rgba(0,0,0,150);
+ }
+#app ul {
+   padding: 12px 0;
+ }
+#app li{
+  margin-bottom: 4px;
+  list-style: none;
+  
+}
+#app a{
+  text-align: center;
+  border: #000 solid 2px;
+  border-radius: 20px;
+  width: 32px;
+  height: 32px;
+  align-self: center;
+  background-color: #ff0000;
+  text-decoration: none;
+  margin-left:32px;
+}
+
+input {
+   border: var(--bg) solid 4px;
+   padding: 12px 0;
+   margin: 12px auto;
+   border-radius: 20px;
+ }
+ input[placeholder]{
+   text-align: center;
+ }
+ button {
+   background-color: #ed9200;
+   padding: 14px;
+   border-radius: 10px;
+ }
+ #add {
+   justify-content: center;
+   margin: 0 auto;
+   
+ }
+ footer {
+   color: white;
+   text-align: center;
+   font-style: italic;
+ }
+ @media only screen and (max-width: 600px){
+   #app {
+     width: 100%;
+   }
+    #app li {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-content: space-around;
+}
+  input{
+     width: 60%;
+     margin: 16px;
+   }
+  }
