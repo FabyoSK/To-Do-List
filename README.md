@@ -13,7 +13,7 @@ It is not necessary to download or install any kind of software to run this appl
 
 ## Getting Started
 
-It is possible to run the application only by [clicking here](fabyosk.github.io/To-Do-List/), a new tab will open the application
+It is possible to run the application only by [clicking here](https://fabyosk.github.io/To-Do-List/), a new tab will open the application
 
 ## Built With
 
