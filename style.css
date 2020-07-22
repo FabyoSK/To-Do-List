@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+}
+
+
 :root {
   --bg: rgb(70, 142, 236);
 }
@@ -21,7 +26,6 @@ body{
    box-shadow: 3px 3px 10px rgba(0,0,0,150);
    padding: 8px 4px;
    justify-content: center;
-   margin: 0 auto;
    align-items: center;
  }
 #app ul {
@@ -31,7 +35,12 @@ body{
   margin-bottom: 4px;
   list-style: none;
   padding-left: 4px;
+  border-bottom:#777 solid 1px;
+  padding: 4px;
   
+}
+#app ul li:nth-lastChild{
+  border: none;
 }
 #app a{
   text-align: center;
@@ -44,13 +53,13 @@ body{
   background-color: #ff0000;
   text-decoration: none;
   color: white;
-  margin-left: 16px;
+  margin-left: 12px;
 }
 #app li {
   display: grid;
   grid-template-columns: 2fr 1fr;
- /* align-items: center;
-  justify-content: space-around;*/ 
+ align-items: center;
+  justify-content: space-around; 
 
 }
 input {
@@ -86,6 +95,6 @@ input {
    }
    input{
      width: 60%;
-     margin: 16px;
+     margin: 12px;
    }
   }
